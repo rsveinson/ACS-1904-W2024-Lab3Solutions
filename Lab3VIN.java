@@ -10,6 +10,7 @@ public class Lab3VIN{
         
         //String test = "s1d.20a0.A2.1234";
         //String test = "s1d.20a0.A2.123";
+        //String test = "s1d.20a.0A2.123";
         //String test = "s1d.20a0.AC.123";
         //String test = "s1d.2000.AC.123";
         String test = "sEd.2000.aC.123";
@@ -50,8 +51,12 @@ public class Lab3VIN{
          * four tokens
          */
         // split the sting into tokens using one of these regular expressions
+        
+        // "sEd.2000.aC.123"
         //String[] tokens = pn.split("[.]+");
         String[] tokens = pn.split("\\.+");
+        
+        // tokens = {"sEd", "2000", "aC", "123"} 
         
         // test token 0: all letters
         for(int i = 0; i < tokens[0].length(); i++){
